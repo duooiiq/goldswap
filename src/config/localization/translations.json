@@ -1361,5 +1361,15 @@
   "Nothing to collect": "Nothing to collect",
   "Download .CSV": "Download .CSV",
   "Download your v0.1 Prediction history below.": "Download your v0.1 Prediction history below.",
-  "Nothing to Collect": "Nothing to Collect"
+  "Nothing to Collect": "Nothing to Collect",
+  "User": "User",
+  "Net Winnings (BNB)": "Net Winnings (BNB)",
+  "Win Rate": "Win Rate",
+  "Rounds Won": "Rounds Won",
+  "Rank By": "Rank By",
+  "Net Winnings": "Net Winnings",
+  "Total Winnings": "Total Winnings",
+  "Total Bets": "Total Bets",
+  "All Others": "All Others",
+  "%num%m": "%num%m"
 }
