@@ -136,6 +136,10 @@ export const useGetLeaderboardResults = () => {
   return useSelector((state: State) => state.predictions.leaderboard.results)
 }
 
+export const useGetLeaderboardAccountResult = () => {
+  return useSelector((state: State) => state.predictions.leaderboard.accountResult)
+}
+
 export const useGetLeaderboardFilters = () => {
   return useSelector((state: State) => state.predictions.leaderboard.filters)
 }
