@@ -151,3 +151,8 @@ export const useGetLeaderboardSkip = () => {
 export const useGetLeaderboardHasMoreResults = () => {
   return useSelector((state: State) => state.predictions.leaderboard.hasMoreResults)
 }
+
+export const useGetAccountResult = (account: string) => {
+  const results = useGetLeaderboardResults()
+  return results.find((result) => result.id === account)
+}
