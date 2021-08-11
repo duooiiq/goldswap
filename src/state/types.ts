@@ -356,7 +356,9 @@ export interface PredictionsState {
     filters: LeaderboardFilter
     skip: number
     hasMoreResults: boolean
-    accountResult: PredictionUser
+    addressResults: {
+      [key: string]: PredictionUser
+    }
     results: PredictionUser[]
   }
 }

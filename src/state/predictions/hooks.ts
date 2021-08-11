@@ -1,9 +1,12 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo } from 'react'
 import { useSelector } from 'react-redux'
 import { ethers } from 'ethers'
 import { minBy, orderBy } from 'lodash'
+import { isAddress } from 'utils'
+import { useAppDispatch } from 'state'
 import { State, NodeRound, ReduxNodeLedger, NodeLedger, ReduxNodeRound } from '../types'
 import { parseBigNumberObj } from './helpers'
+import { fetchAddressResult } from '.'
 
 export const useGetRounds = () => {
   const rounds = useSelector((state: State) => state.predictions.rounds)
@@ -136,10 +139,6 @@ export const useGetLeaderboardResults = () => {
   return useSelector((state: State) => state.predictions.leaderboard.results)
 }
 
-export const useGetLeaderboardAccountResult = () => {
-  return useSelector((state: State) => state.predictions.leaderboard.accountResult)
-}
-
 export const useGetLeaderboardFilters = () => {
   return useSelector((state: State) => state.predictions.leaderboard.filters)
 }
@@ -152,7 +151,17 @@ export const useGetLeaderboardHasMoreResults = () => {
   return useSelector((state: State) => state.predictions.leaderboard.hasMoreResults)
 }
 
-export const useGetAccountResult = (account: string) => {
-  const results = useGetLeaderboardResults()
-  return results.find((result) => result.id === account)
+export const useGetLeaderboardAddressResult = (account: string) => {
+  const addressResult = useSelector((state: State) => state.predictions.leaderboard.addressResults[account])
+  const dispatch = useAppDispatch()
+
+  useEffect(() => {
+    const address = isAddress(account)
+
+    if (!addressResult && address) {
+      dispatch(fetchAddressResult(account))
+    }
+  }, [dispatch, account, addressResult])
+
+  return addressResult
 }
