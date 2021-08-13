@@ -274,13 +274,19 @@ export const filterLeaderboard = createAsyncThunk<{ results: PredictionUser[] },
   },
 )
 
-export const fetchAddressResult = createAsyncThunk<{ account: string; data: PredictionUser }, string>(
-  'predictions/fetchAddressResult',
-  async (account) => {
-    const userResponse = await getPredictionUser(account)
-    return { account, data: transformUserResponse(userResponse) }
-  },
-)
+export const fetchAddressResult = createAsyncThunk<
+  { account: string; data: PredictionUser },
+  string,
+  { rejectValue: string }
+>('predictions/fetchAddressResult', async (account, { rejectWithValue }) => {
+  const userResponse = await getPredictionUser(account)
+
+  if (!userResponse) {
+    return rejectWithValue(account)
+  }
+
+  return { account, data: transformUserResponse(userResponse) }
+})
 
 export const filterNextPageLeaderboard = createAsyncThunk<
   { results: PredictionUser[]; skip: number },
@@ -380,6 +386,10 @@ export const predictionsSlice = createSlice({
       const { account, data } = action.payload
       state.leaderboard.loadingState = LeaderboardLoadingState.IDLE
       state.leaderboard.addressResults[account] = data
+    })
+    builder.addCase(fetchAddressResult.rejected, (state, action) => {
+      state.leaderboard.loadingState = LeaderboardLoadingState.IDLE
+      state.leaderboard.addressResults[action.payload] = null
     })
 
     // Leaderboard next page
