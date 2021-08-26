@@ -19,7 +19,7 @@ import {
   State,
 } from 'state/types'
 import { getPredictionsContract } from 'utils/contractHelpers'
-import { FUTURE_ROUND_COUNT, PAST_ROUND_COUNT, ROUND_BUFFER } from './config'
+import { FUTURE_ROUND_COUNT, LEADERBOARD_MIN_ROUNDS_PLAYED, PAST_ROUND_COUNT, ROUND_BUFFER } from './config'
 import {
   getBetHistory,
   transformBetResponse,
@@ -268,6 +268,7 @@ export const filterLeaderboard = createAsyncThunk<{ results: PredictionUser[] },
     const usersResponse = await getPredictionUsers({
       skip: 0,
       orderBy: filters.orderBy,
+      where: { totalBets_gte: LEADERBOARD_MIN_ROUNDS_PLAYED },
     })
 
     return { results: usersResponse.map(transformUserResponse) }
@@ -297,6 +298,7 @@ export const filterNextPageLeaderboard = createAsyncThunk<
   const usersResponse = await getPredictionUsers({
     skip,
     orderBy: state.predictions.leaderboard.filters.orderBy,
+    where: { totalBets_gte: LEADERBOARD_MIN_ROUNDS_PLAYED },
   })
 
   return { results: usersResponse.map(transformUserResponse), skip }
