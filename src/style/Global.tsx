@@ -39,6 +39,9 @@ const GlobalStyle = createGlobalStyle`
     background-color: #b70c1f;
     color: #b3b3b3;
   }
+  .tSBKF {
+    display: none;
+  }
   .hIkwok {
     background-color: transparent;
   }
