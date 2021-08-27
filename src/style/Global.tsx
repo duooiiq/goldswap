@@ -14,6 +14,9 @@ const GlobalStyle = createGlobalStyle`
   .fATxBR {
     background-color: transparent;
   }
+.jARayQ {
+display: none;
+}
 .blmMla {
 background-color: #ffffff;
 }
