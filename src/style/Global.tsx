@@ -13,10 +13,13 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     background-image: linear-gradient(35deg, purple, gold, blue, gold, purple);
-  .dwqKIT {
+  nones {
     background-image: linear-gradient(35deg, purple, gold, blue, gold, purple);
     background: linear-gradient(35deg, purple, gold, blue, gold, purple);
   }
+  .dwqKIT {
+ display: none;
+}
   .fobcVZ {
  background: transparent;
   }
