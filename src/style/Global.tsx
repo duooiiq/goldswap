@@ -11,6 +11,9 @@ const GlobalStyle = createGlobalStyle`
   * {
     font-family: Courier;
   }
+  .fATxBR {
+    background-color: transparent;
+  }
   .KKOai {
     display: none;
   }
