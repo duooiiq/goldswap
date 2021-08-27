@@ -1,12 +1,12 @@
 import { ChainId, Token } from '@pancakeswap/sdk'
 
-export const GDM: { [chainId: number]: Token } = {
+export const CAKE: { [chainId: number]: Token } = {
   [ChainId.MAINNET]: new Token(
     ChainId.MAINNET,
     '0xe4c4ba818b9d04f9ee6bb889ad90af1726462fa5',
     5,
-    'GDM',
-    'GoldMillon',
+    'CAKE',
+    'PancakeSwap Token',
   ),
   [ChainId.TESTNET]: new Token(
     ChainId.TESTNET,
