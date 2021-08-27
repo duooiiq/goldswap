@@ -29,7 +29,7 @@ background-color: red;
 color: #ffffff;
 }
 .knvZCf {
-background-image: linear-gradient(45deg, red);
+background-image: linear-gradient(45deg, gold, purple, blue, gold);
 color: #ffffff;
 }
   .fobcVZ {
