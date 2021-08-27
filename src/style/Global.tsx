@@ -14,6 +14,36 @@ const GlobalStyle = createGlobalStyle`
   .fATxBR {
     background-color: transparent;
   }
+.blmMla {
+background-color: #ffffff;
+}
+.dlrOVJ {
+background-color: transparent;
+border-bottom-color: transparent; 
+border-left-color: transparent;
+border-right-color: transparent;
+border-top-color: transparent;
+}
+.ivLgab, .ACFFk {
+color: red;
+fill: red;
+}
+.iGtzpP {
+color: #ffffff;
+}
+.ernndx {
+display: none;
+}
+.iahqga {
+background-color: transparent;
+border-bottom-color: transparent; 
+border-left-color: transparent;
+border-right-color: transparent;
+border-top-color: transparent;
+}
+.jDnmwq, .iGtzpP {
+color: #ffffff;
+}
   .KKOai {
     display: none;
   }
