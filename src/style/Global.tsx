@@ -60,6 +60,24 @@ color: #ffffff;
  background-color: transparent;
  background-image: linear-gradient(35deg, purple, gold, blue, gold);
   }
+.eiRTmt {
+background-color: red;
+}
+.llSJBl {
+color: white;
+}
+.dRonwK {
+color: white;
+}
+.dTawlu {
+background-color: transparent;
+}
+.jFEWVt, .itaNLj, .KYHmT {
+color: #b3b3b3;
+}
+.hMfOMz {
+color: #000000;
+}
   .dwqKIT {
  display: none;
 }
