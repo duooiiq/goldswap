@@ -11,6 +11,9 @@ const GlobalStyle = createGlobalStyle`
   * {
     font-family: Monospace;
   }
+  .KKOai {
+    display: none;
+  }
   body {
     background-image: linear-gradient(35deg, purple, gold, blue, gold, purple);
   nones {
