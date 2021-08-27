@@ -5,7 +5,7 @@ export const DEFAULT_META: PageMeta = {
   title: 'GoldSwap',
   description:
     'Stay active this exchange is very peculiar and attractive ...',
-  image: 'https://pancakeswap.finance/images/hero.png',
+  image: 'https://i.ibb.co/jrk24fm/GOLDSWAP.png',
 }
 
 export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
