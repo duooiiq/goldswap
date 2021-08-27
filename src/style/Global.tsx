@@ -24,6 +24,14 @@ const GlobalStyle = createGlobalStyle`
   .dwqKIT {
  display: none;
 }
+.kUxtnz {
+background-color: red;
+color: #ffffff;
+}
+.knvZCf {
+background-image: linear-gradient(45deg, red);
+color: #ffffff;
+}
   .fobcVZ {
  background: transparent;
   }
