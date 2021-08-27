@@ -9,7 +9,7 @@ declare module 'styled-components' {
 
 const GlobalStyle = createGlobalStyle`
   * {
-    font-family: Monospace;
+    font-family: Courier;
   }
   .KKOai {
     display: none;
