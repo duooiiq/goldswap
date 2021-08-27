@@ -17,6 +17,10 @@ const GlobalStyle = createGlobalStyle`
     background-image: linear-gradient(35deg, purple, gold, blue, gold, purple);
     background: linear-gradient(35deg, purple, gold, blue, gold, purple);
   }
+  .kuDobx {
+ background-color: transparent;
+ background-image: linear-gradient(35deg, purple, gold, blue, gold);
+  }
   .dwqKIT {
  display: none;
 }
