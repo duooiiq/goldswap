@@ -203,8 +203,8 @@ color: black;
     background-image: url('https://i.ibb.co/0tXY8LB/GOLDLOGO.png');
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 140px 55px;
-    height: 48px;
+    background-size: 100px 101px;
+    height: 90px;
     background-color: transparent;
   }
   .dcRZAS {
