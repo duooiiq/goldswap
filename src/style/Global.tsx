@@ -200,7 +200,7 @@ color: black;
     display: none;
   }
   .bkuNTh {
-    background-image: url('https://i.ibb.co/jrk24fm/GOLDSWAP.png');
+    background-image: url('https://i.ibb.co/0tXY8LB/GOLDLOGO.png');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 140px 55px;
