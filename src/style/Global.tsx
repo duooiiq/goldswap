@@ -20,6 +20,16 @@ display: none;
 .blmMla {
 background-color: #ffffff;
 }
+.obCWW svg {
+
+    fill: rgb(189 17 17);
+    
+}
+.izwwwB svg {
+
+    fill: rgb(210 14 14);
+    
+}
 .dlrOVJ {
 background-color: transparent;
 border-bottom-color: transparent; 
@@ -57,8 +67,8 @@ color: #ffffff;
     background: linear-gradient(35deg, purple, gold, blue, gold, purple);
   }
   .kuDobx {
- background-color: transparent;
- background-image: linear-gradient(35deg, purple, gold, blue, gold);
+ background-color: gold;
+ background-image: none;
   }
 .eiRTmt {
 background-color: red;
