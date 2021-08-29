@@ -92,29 +92,12 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <LotteryBanner currentLotteryPrize={currentLotteryPrize} />
       <Page>
         <Hero>
           <Heading as="h1" scale="xl" mb="24px" color="secondary">
-            {t('PancakeSwap')}
+            {t('GoldSwap Gold In A App.. ')}
           </Heading>
-          <Text>{t('The #1 AMM and yield farm on Binance Smart Chain.')}</Text>
-        </Hero>
-        <div>
-          <Cards>
-            <FarmStakingCard />
-            <PredictionPromotionCard />
-          </Cards>
-          <CTACards>
-            <EarnAPRCard />
-            <EarnAssetCard />
-            <LotteryPromotionCard currentLotteryPrize={currentLotteryPrize} />
-          </CTACards>
-          <Cards>
-            <CakeStats />
-            <TotalValueLockedCard />
-          </Cards>
-        </div>
+          <Text>{t('The DEX, NFTs Marketplace In One Place...')}</Text>
       </Page>
     </>
   )
