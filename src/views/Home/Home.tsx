@@ -98,6 +98,7 @@ const Home: React.FC = () => {
             {t('GoldSwap Gold In A App.. ')}
           </Heading>
           <Text>{t('The DEX, NFTs Marketplace In One Place...')}</Text>
+       </Hero>
       </Page>
     </>
   )
