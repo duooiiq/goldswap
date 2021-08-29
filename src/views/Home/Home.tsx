@@ -98,7 +98,21 @@ const Home: React.FC = () => {
             {t('GoldSwap Gold In A App.. ')}
           </Heading>
           <Text>{t('The DEX, NFTs Marketplace In One Place...')}</Text>
-       </Hero>
+<Text>GoldenEcosystem
+
+Golden Million Token
+
+Supply 33 m
+Cost 0.00001
+Pre - sale 13 m to ico
+AutoBurn 6000 GDM
+Blocked Lp 100%. 
+Objetive 200 bnb. 
+
+GoldenSwap
+
+A DE - Fi that provee to the users a option for better buys and sells of BSCs tokens and ETHs smart contracts. Including NFTs merch and easy register and login, with a optimal fees and gwei to the user.</Text>
+</Hero>
       </Page>
     </>
   )
