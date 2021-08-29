@@ -20,8 +20,22 @@ display: none;
 .GXQFF {
 color: red;
 }
+.jMsbbs {
+background-image: none;
+background-color: transparent;
+}
+.fUqCVp {
+background-color: gold;
+}
+.hPEGSU {
+background-color: transparent;
+}
+.jYLfuR {
+color: red;
+}
 .dTawlu {
-background-image: transparent;
+background-image: none;
+background-color: transparent;
 }
 .hyXZtu {
 background-color: red;
