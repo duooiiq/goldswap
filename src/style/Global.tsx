@@ -17,6 +17,45 @@ const GlobalStyle = createGlobalStyle`
 .jARayQ {
 display: none;
 }
+.GXQFF {
+color: red;
+}
+.dTawlu {
+background-image: transparent;
+}
+.hyXZtu {
+background-color: red;
+color: white;
+}
+.irzwIL {
+background-color: transparent;
+color: red;
+}
+.irzwIL:focus:not(:disabled) {
+box-shadow: red;
+}
+.Qftiv {
+background-color: transparent;
+color: red;
+}
+.Qftiv:focus:not(:disabled) {
+box-shadow: red;
+}
+.bQHQlt {
+background-color: red;
+}
+.haVRrx {
+background-color: red;
+}
+.eoaigD {
+color: white;
+}
+.hizvcO {
+background-color: red;
+}
+.cSawQi {
+fill: red;
+}
 .blmMla {
 background-color: #ffffff;
 }
