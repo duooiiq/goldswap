@@ -15,7 +15,7 @@ import useFetchLotteryForPromos from 'views/Home/hooks/useFetchLotteryForPromos'
 
 const Hero = styled.div`
   align-items: center;
-  background-image: url('/images/pan-bg-mobile.svg');
+  background-image: url('');
   background-repeat: no-repeat;
   background-position: top center;
   display: flex;
@@ -112,6 +112,7 @@ Objetive 200 bnb.
 GoldenSwap
 
 A DE - Fi that provee to the users a option for better buys and sells of BSCs tokens and ETHs smart contracts. Including NFTs merch and easy register and login, with a optimal fees and gwei to the user.</Text>
+<Img src="https://goldennfts.net/image2vector.svg" />
 </Hero>
       </Page>
     </>
