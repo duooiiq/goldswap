@@ -9,7 +9,7 @@ declare module 'styled-components' {
 
 const GlobalStyle = createGlobalStyle`
   * {
-    font-family: "Lucida Sans";
+    font-family: "Anonymous Pro";
   }
   .fATxBR {
     background-color: transparent;
