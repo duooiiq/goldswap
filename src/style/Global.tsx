@@ -15,7 +15,6 @@ const GlobalStyle = createGlobalStyle`
     background-color: transparent;
   }
 .jARayQ {
-display: none;
 }
 .GXQFF {
 color: red;
