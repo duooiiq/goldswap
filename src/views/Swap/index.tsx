@@ -20,6 +20,9 @@ import TokenWarningModal from './components/TokenWarningModal'
 import ProgressSteps from './components/ProgressSteps'
 import { AppHeader, AppBody } from '../../components/App'
 import UnlockButton from '../../components/UnlockButton'
+import { Menu as UikitMenu } from '@pancakeswap/uikit'
+import { languageList } from 'config/localization/languages'
+import { useTranslation } from 'contexts/Localization'
 
 import { INITIAL_ALLOWED_SLIPPAGE } from '../../config/constants'
 import useActiveWeb3React from '../../hooks/useActiveWeb3React'
@@ -458,6 +461,11 @@ export default function Swap({ history }: RouteComponentProps) {
         <AdvancedSwapDetailsDropdown trade={trade} />
       ) : (
         <UnsupportedCurrencyFooter currencies={[currencies.INPUT, currencies.OUTPUT]} />
+      <UikitMenu
+      currentLang={currentLanguage.code}
+      langs={languageList}
+      setLang={setLanguage} 
+      />
       )}
     </Page>
   )
