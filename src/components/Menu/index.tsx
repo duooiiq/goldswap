@@ -18,23 +18,9 @@ const Menu = (props) => {
 
   return (
     <UikitMenu
-      account={account}
-      login={login}
-      logout={logout}
-      isDark={isDark}
-      toggleTheme={toggleTheme}
       currentLang={currentLanguage.code}
       langs={languageList}
       setLang={setLanguage}
-      cakePriceUsd={cakePriceUsd.toNumber()}
-      links={config(t)}
-      profile={{
-        username: profile?.username,
-        image: profile?.nft ? `/images/nfts/${profile.nft?.images.sm}` : undefined,
-        profileLink: '/profile',
-        noProfileLink: '/profile',
-        showPip: !profile?.username,
-      }}
       {...props}
     />
   )
