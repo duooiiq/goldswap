@@ -40,7 +40,7 @@ const PageMeta = () => {
 
   return (
     <Helmet>
-      <title>.</title>
+      <title>{title}</title>
       <meta property="og:title" content="none" />
       <meta property="og:description" content="none" />
       <meta property="og:image" content="none" />
