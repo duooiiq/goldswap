@@ -40,10 +40,10 @@ const PageMeta = () => {
 
   return (
     <Helmet>
-      <title></title>
-      <meta property="og:title" content= />
-      <meta property="og:description" content= />
-      <meta property="og:image" content= />
+      <title>.</title>
+      <meta property="og:title" content="none" />
+      <meta property="og:description" content="none" />
+      <meta property="og:image" content="none" />
     </Helmet>
   )
 }
