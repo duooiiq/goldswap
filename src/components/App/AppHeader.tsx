@@ -27,7 +27,9 @@ const AppHeader: React.FC<Props> = ({ title, subtitle, helper, backTo, noConfig 
     <AppHeaderContainer>
       <Flex alignItems="center" mr={noConfig ? 0 : '16px'}>
         {backTo && (
-          <div className="tocenter" />
+         <IconButton as={Link} to={backTo}>
+            <ArrowBackIcon width="32px" />
+          </IconButton>
         )}
         <Flex flexDirection="column">
           <Heading as="h2" mb="8px">
