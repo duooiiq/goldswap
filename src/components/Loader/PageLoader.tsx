@@ -17,4 +17,4 @@ const PageLoader: React.FC = () => {
   )
 }
 
-export default PageLoaderg
+export default PageLoader
