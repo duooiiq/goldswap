@@ -109,9 +109,7 @@ border-top-color: transparent;
 .jDnmwq, .iGtzpP {
 color: #ffffff;
 }
-  .KKOai {
-    display: none;
-  }
+
   body {
     background-image: linear-gradient(35deg, purple, gold, blue, gold, purple);
   nones {
@@ -170,9 +168,6 @@ color: #ffffff;
     background-color: #b70c1f;
     color: #b3b3b3;
   }
-  .tSBKF {
-    display: none;
-  }
   .hIkwok {
     background-color: transparent;
   }
@@ -180,11 +175,8 @@ color: #ffffff;
     background-color: linear-gradient(55deg, red, blue);
     color: red;
   }
-  a.sc-GvhzO bssNqU {
-    background-image: url("https://i.ibb.co/t3V0hJL/1629736129850.png");
-  }
-  .jskajajajajajaajajafre {
-    background-image: url("https://i.ibb.co/t3V0hJL/1629736129850.png");
+  div.tocenter {
+  background-image: url('https://i.ibb.co/0tXY8LB/GOLDLOGO.png');
   }
   .cLWmML {
     color: red;
