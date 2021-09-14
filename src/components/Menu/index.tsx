@@ -7,7 +7,6 @@ import useTheme from 'hooks/useTheme'
 import useAuth from 'hooks/useAuth'
 import { usePriceCakeBusd, useProfile } from 'state/hooks'
 import config from './config'
-
 const Menu = (props) => {
   const { account } = useWeb3React()
   const { login, logout } = useAuth()
@@ -18,12 +17,22 @@ const Menu = (props) => {
 
   return (
     <UikitMenu
+      account={account}
+      login={login}
+      logout={logout}
       currentLang={currentLanguage.code}
       langs={languageList}
       setLang={setLanguage}
+      links={config(t)}
+      profile={{
+        username: profile?.username,
+        image: profile?.nft ? `/images/nfts/${profile.nft?.images.sm}` : undefined,
+        profileLink: '/profile',
+        noProfileLink: '/profile',
+        showPip: !profile?.username,
+      }}
       {...props}
     />
   )
 }
-
 export default Menu
