@@ -7,6 +7,7 @@ import useTheme from 'hooks/useTheme'
 import useAuth from 'hooks/useAuth'
 import { usePriceCakeBusd, useProfile } from 'state/hooks'
 import config from './config'
+
 const Menu = (props) => {
   const { account } = useWeb3React()
   const { login, logout } = useAuth()
@@ -20,6 +21,7 @@ const Menu = (props) => {
       account={account}
       login={login}
       logout={logout}
+      isDark={isDark}
       currentLang={currentLanguage.code}
       langs={languageList}
       setLang={setLanguage}
@@ -35,4 +37,5 @@ const Menu = (props) => {
     />
   )
 }
+
 export default Menu
