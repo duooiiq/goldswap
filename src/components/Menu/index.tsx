@@ -18,6 +18,7 @@ const Menu = (props) => {
 
   return (
     <UikitMenu
+      account={account}
       login={login}
       logout={logout}
       currentLang={currentLanguage.code}
