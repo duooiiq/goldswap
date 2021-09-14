@@ -18,10 +18,8 @@ const Menu = (props) => {
 
   return (
     <UikitMenu
-      account={account}
       login={login}
       logout={logout}
-      isDark={isDark}
       currentLang={currentLanguage.code}
       langs={languageList}
       setLang={setLanguage}
