@@ -175,9 +175,6 @@ color: #ffffff;
     background-color: linear-gradient(55deg, red, blue);
     color: red;
   }
-  div.tocenter {
-  background-image: url('https://i.ibb.co/0tXY8LB/GOLDLOGO.png');
-  }
   .cLWmML {
     color: red;
   }
